@@ -18,6 +18,9 @@ use App\Http\Controllers\EventsController;
 Route::get('/', [EventsController::class, 'index']);
 Route::post('/enviar', [EventsController::class, 'form_cadastro']);
 Route::get('/cadastrar', [EventsController::class, 'pagina_cadastro']);
-
-
+Route::get('/listagem-clientes', [EventsController::class, 'listagem']);
+Route::get('/dados-cliente/{id}', [EventsController::class, 'dados_cliente']);
+Route::delete('/{id}', [EventsController::class, 'destroy']);
+Route::get('/editar-dados/{id}', [EventsController::class, 'editar_dados']);
+Route::put('/update/{id}', [EventsController::class, 'editar']);
 
