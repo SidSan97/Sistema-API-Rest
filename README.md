@@ -7,6 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Get Started
+
+- Com Laravel instalado conforme a documentação  que se encontra em: https://laravel.com/docs/9.x entre com o diretório local deste repositosio no VS Code, abra o terminal do VS  Code e rode o comando: <i>php artisan serve</i>. Após isso, clique no IP local que aparecerá no terminal e está pronto para usar a aplicação.
+- A pasta <strong>Dump</strong> contém uma cópia do banco de dados.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
