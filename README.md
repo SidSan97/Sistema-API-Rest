@@ -10,6 +10,7 @@
 ## Get Started
 
 - Com Laravel instalado conforme a documentação  que se encontra em: https://laravel.com/docs/9.x entre com o diretório local deste repositosio no VS Code, abra o terminal do VS  Code e rode o comando: <i>php artisan serve</i>. Após isso, clique no IP local que aparecerá no terminal e está pronto para usar a aplicação.
+
 - A pasta <strong>Dump</strong> contém uma cópia do banco de dados.
 
 ## About Laravel
