@@ -1,0 +1,84 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo
+{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.main-block
+{
+    display: flex;
+    width: 100%;
+}
+
+.main-block div
+{
+    padding-top: 17px;
+    display: flex;
+    justify-content: center;
+}
+
+.bloco
+{
+    display: block;
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    background-color: rgb(49, 143, 231);
+}
+
+.bloco a
+{
+    color: antiquewhite;
+}
+
+.bloco a:link
+{
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.dataTables_wrapper
+{
+    width: 100% !important;
+}
+
+.formulario
+{
+    width: 100%;
+}
+
+.formulario input
+{
+    width: 100%;
+    outline: none;
+}
+
+.noti
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.notification
+{
+    font-size: 24px;
+    border-radius: 5px;
+    display: block;
+    justify-content: center;
+    width: 370px;
+    height: 65px;
+    background: #5ecd5e;
+    text-align: center;
+    color: white;
+    padding-top: 7px;
+}

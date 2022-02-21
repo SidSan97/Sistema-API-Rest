@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -16,7 +18,23 @@
 <body>
     <div class="container">
 
-        <h1>Lista de clientes</h1>
+        <?php if(isset($_GET['editadoSucesso'])): ?>
+            <div class="noti">
+                <div class="notification">
+                    <p>Dados editado com sucesso!</p>
+                </div>
+            </div>
+        <?php endif; ?>
+
+        <?php if(isset($_GET['excluidoSucesso'])): ?>
+            <div class="noti">
+                <div class="notification">
+                    <p>Exclusão feita com sucesso!</p>
+                </div>
+            </div>
+        <?php endif; ?>
+
+        <h1 class="titulo">Lista de clientes</h1>
 
         <div class="row">
             <table id="lista" class="display" style="width:100%">
@@ -41,7 +59,7 @@
                             <td><a href=""></a>{{$event->placa}}</td>
                             <td>
                                 <div class="d-flex">
-                                    <button class="btn btn-warning"><a href="/editar-dados/{{$event->id}}">Editar</a></button>
+                                    <button class="btn btn-warning mr-2"><a class="text-dark" href="/editar-dados/{{$event->id}}">Editar</a></button>
 
                                     <form action="/{{$event->id}}" method="POST">
                                         @csrf
@@ -56,7 +74,7 @@
             </table>
         </div>
 
-        <button class="btn btn-success"><a href="\">Voltar</a></button>
+        <button class="btn btn-success"><a class="text-white" href="\">Voltar</a></button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
